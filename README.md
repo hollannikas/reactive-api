@@ -4,9 +4,20 @@
 
 - [x] README
 - [x] license
-- [ ] docker
+- [x] docker
 - [ ] CI
 - [ ] mongo repository
 - [ ] API
 - [ ] websocket
 - [ ] SPA that uses websocket
+
+# Development
+
+Start mongoDB `docker-compose up -d mongo`, or a local mongoDB
+
+Build and run: `./gradlew bootRun`
+or start spring boot in your [favorite IDE](https://www.jetbrains.com/idea/)
+
+# Docker
+
+`docker-compose up` builds and runs the application
