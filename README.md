@@ -3,7 +3,7 @@
 # Reactive API
 
 - [x] README
-- [ ] license
+- [x] license
 - [ ] docker
 - [ ] CI
 - [ ] mongo repository
