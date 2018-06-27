@@ -15,7 +15,7 @@
 
 Start mongoDB `docker-compose up -d mongo`, or a local mongoDB
 
-Build and run: `./gradlew bootRun`
+Build and run: `./gradlew bootRun -Dspring.data.mongodb.uri=mongodb://localhost:27017/reactive`
 or start spring boot in your [favorite IDE](https://www.jetbrains.com/idea/)
 
 # Docker

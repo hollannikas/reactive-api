@@ -23,6 +23,10 @@ apply plugin: "kotlin-noarg"
 noArg {
     annotation("org.springframework.data.mongodb.core.mapping.Document")
 }
+bootRun {
+    systemProperties = System.properties
+}
+
 
 group = 'fi.hollannikas'
 version = '0.0.1-SNAPSHOT'
