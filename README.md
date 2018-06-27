@@ -6,7 +6,7 @@
 - [x] license
 - [x] docker
 - [ ] CI
-- [ ] mongo repository
+- [x] mongo repository
 - [ ] API
 - [ ] websocket
 - [ ] SPA that uses websocket
