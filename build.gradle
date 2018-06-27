@@ -57,4 +57,5 @@ dependencies {
     compile("org.jetbrains.kotlin:kotlin-reflect")
     testCompile('org.springframework.boot:spring-boot-starter-test')
     testCompile('io.projectreactor:reactor-test')
+    testCompile('org.junit.jupiter:junit-jupiter-engine:5.1.1')
 }
