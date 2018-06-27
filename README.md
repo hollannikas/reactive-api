@@ -5,7 +5,7 @@
 - [x] README
 - [x] license
 - [x] docker
-- [ ] CI
+- [x] CI
 - [x] mongo repository
 - [ ] API
 - [ ] websocket
