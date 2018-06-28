@@ -9,7 +9,8 @@
 - [x] CI
 - [x] mongo repository
 - [x] API
-- [ ] websocket
+- [x] web socket
+- [ ] web socket ping-pong
 - [ ] SPA that uses websocket
 
 # Development
