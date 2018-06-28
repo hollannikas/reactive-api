@@ -8,7 +8,7 @@
 - [x] docker
 - [x] CI
 - [x] mongo repository
-- [ ] API
+- [x] API
 - [ ] websocket
 - [ ] SPA that uses websocket
 
