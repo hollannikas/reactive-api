@@ -2,6 +2,7 @@ package fi.hollannikas.reactive
 
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
+import org.springframework.core.io.ClassPathResource
 import org.springframework.http.MediaType.APPLICATION_JSON
 import org.springframework.web.reactive.function.server.router
 
@@ -17,5 +18,6 @@ class ApplicationRoutes(val messageHandler: MessageHandler) {
                 GET("/{id}", messageHandler::findOne)
             }
         }
+        resources("/**", ClassPathResource("static/"))
     }
 }

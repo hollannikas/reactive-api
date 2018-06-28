@@ -11,7 +11,7 @@
 - [x] API
 - [x] web socket
 - [ ] web socket ping-pong
-- [ ] SPA that uses websocket
+- [x] SPA that uses websocket
 
 # Development
 
