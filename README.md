@@ -9,8 +9,8 @@
 - [x] CI
 - [x] mongo repository
 - [x] API
-- [ ] websocket
-- [ ] SPA that uses websocket
+- [x] web socket
+- [x] SPA that uses websocket
 
 # Development
 
@@ -22,3 +22,9 @@ or start spring boot in your [favorite IDE](https://www.jetbrains.com/idea/)
 # Docker
 
 `docker-compose up` builds and runs the application
+
+# Capped collection
+The application uses a collection called `messages`, that needs to be capped.
+
+Capping is done manually with: `db.runCommand({ convertToCapped: 'reactive.messages', size: 9128 });` until
+I figure out how to do this at startup 🕶

@@ -16,14 +16,16 @@ fun ServerResponse.BodyBuilder.json() = contentType(APPLICATION_JSON_UTF8)
 @Service
 class MessageHandler(val repository: MessageRepository) {
     fun createMessage(request: ServerRequest) =
-            repository.save(request.bodyToMono()).flatMap {
-                created(create("/api/message/${it.id}")).json().body(it.toMono())
-            }
+            request.bodyToMono<Message>()
+                    .flatMap { repository.save(it) }
+                    .flatMap { created(create("/api/message/${it.id}"))
+                            .json()
+                            .body(it.toMono()) }
 
     fun findOne(request: ServerRequest) =
             ok()
                     .json()
-                    .body(repository.findOne(request.pathVariable("id")))
+                    .body(repository.findById(request.pathVariable("id")))
 
     fun findAll(request: ServerRequest) =
             ok()
