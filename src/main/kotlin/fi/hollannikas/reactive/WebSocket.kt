@@ -10,7 +10,7 @@ class MessageSocketHandler(val repository: MessageRepository) : WebSocketHandler
 
     override fun handle(session: WebSocketSession): Mono<Void> {
         return session.send(
-                repository.findAll()
+                repository.findWithTailableCursorBy()
                         .map { it.text }
                         .map(session::textMessage)
         )
